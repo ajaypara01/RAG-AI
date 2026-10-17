@@ -1,0 +1,15 @@
+
+        Retrieval-Augmented Generation (RAG) is a technique that combines information retrieval with a large language model. When a user asks a question, the system searches a collection of documents for relevant information and provides the best-matching passages to the model. The model then uses those passages, along with its language abilities, to generate a useful response.
+
+        RAG can help a chatbot answer questions using specific or up-to-date information that may not have been included in the model’s original training data. For example, a company could use RAG to answer employee questions based on its handbooks, policies, and internal guides. The quality of the answer depends on finding relevant source material, so the documents need to be prepared, divided into chunks, and indexed carefully.
+
+        Sentences about RAG
+        RAG stands for Retrieval-Augmented Generation.
+        It retrieves relevant information before generating an answer.
+        A RAG system can use a collection of documents as its knowledge source.
+        Documents are often split into smaller chunks for efficient search.
+        The retrieved passages provide context for the language model.
+        RAG can make answers more relevant to a particular dataset.
+        RAG does not guarantee that every answer will be correct.
+        Clear, well-organized source documents can improve retrieval quality.
+    

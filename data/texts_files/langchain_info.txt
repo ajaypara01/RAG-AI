@@ -1,0 +1,14 @@
+
+        LangChain is a framework for building applications powered by language models. It provides tools for connecting models to data sources, prompts, document loaders, text splitters, vector stores, and other services. In a Retrieval-Augmented Generation (RAG) application, LangChain can help load documents, divide them into chunks, create embeddings, retrieve relevant chunks, and pass them to a language model to generate an answer. LangChain helps organize these steps, but it does not provide the language model’s knowledge by itself; the results still depend on the quality of the documents, retrieval setup, and model.
+        Sentences about LangChain
+        LangChain is a framework for building applications with language models.
+        It can connect a language model to external data and tools.
+        Document loaders bring files and other content into an application.
+        Text splitters divide long documents into smaller chunks.
+        Embeddings represent text as numbers so similar content can be found.
+        A vector store can save and search those embeddings.
+        In a RAG workflow, a retriever finds passages relevant to a user’s question.
+        LangChain can pass retrieved passages to a model as context.
+        LangChain helps build the workflow; it does not guarantee correct answers.
+        You can build RAG systems without LangChain, but it can provide reusable components.
+    

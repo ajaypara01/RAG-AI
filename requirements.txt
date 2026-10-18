@@ -12,3 +12,5 @@ pymupdf
 pdfminer
 python-docx
 docx2txt
+unstructured
+pandas

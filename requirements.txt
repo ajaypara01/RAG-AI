@@ -14,3 +14,7 @@ python-docx
 docx2txt
 unstructured
 pandas
+openpyxl
+msoffcrypto-tool
+xlrd
+langchain_core

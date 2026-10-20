@@ -18,3 +18,4 @@ openpyxl
 msoffcrypto-tool
 xlrd
 langchain_core
+langchain_huggingface

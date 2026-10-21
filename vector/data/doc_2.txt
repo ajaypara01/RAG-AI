@@ -1,0 +1,3 @@
+
+    Machine learning includes supervised and unsupervised learning. Supervised learning uses labeled examples: regression predicts numeric values, while classification predicts categories. Unsupervised learning looks for structure in data without provided labels, such as grouping similar examples with clustering. Split data into training and test sets to measure performance on examples the model has not seen.
+    

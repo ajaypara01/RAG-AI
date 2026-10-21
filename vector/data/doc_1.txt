@@ -1,0 +1,3 @@
+
+    A good foundation for learning AI includes Python programming, basic statistics, probability, and linear algebra. Practice with variables, functions, lists, dictionaries, and data libraries such as NumPy and pandas. Build intuition by experimenting with small datasets and simple models.
+    

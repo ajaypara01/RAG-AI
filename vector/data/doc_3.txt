@@ -1,0 +1,3 @@
+
+    A neural network learns by adjusting its weights to reduce errors on training examples. Transformers use attention to relate parts of an input sequence. Large language models generate text based on learned patterns, but their answers can be inaccurate or unsupported, so important claims should be checked against reliable sources.
+    

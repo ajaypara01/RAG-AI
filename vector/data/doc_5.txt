@@ -1,0 +1,3 @@
+
+    Responsible AI practice includes protecting personal information, checking for bias, testing on realistic examples, and explaining system limitations. Use data only when you have permission. For high-impact decisions, keep qualified people involved rather than relying on an AI model alone. Treat generated content as a draft that needs verification, not as automatically verified fact.
+    

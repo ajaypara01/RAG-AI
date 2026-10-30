@@ -19,3 +19,4 @@ msoffcrypto-tool
 xlrd
 langchain_core
 langchain_huggingface
+rank_bm25

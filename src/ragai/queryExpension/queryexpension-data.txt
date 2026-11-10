@@ -1,0 +1,104 @@
+LangChain and AI Development Notes
+
+## LangChain
+
+LangChain is a framework for building applications powered by large language models (LLMs).
+It provides reusable components that connect models to prompts, data sources, tools, and application workflows.
+
+A workflow can combine multiple steps.
+For example, it can accept a question, retrieve relevant documents, provide those documents to an LLM, and return an answer.
+
+## Building an AI Application
+
+### Choose and Configure a Model
+
+Choose an LLM based on the application's quality, speed, privacy, and cost needs.
+A model may be accessed through a hosted API or run locally.
+Store API credentials securely and keep secrets out of source code and prompts.
+
+### Write and Test Prompts
+
+Write prompts that clearly state the task, provide necessary context, and describe the desired response format.
+Test prompts with typical, ambiguous, and unusual inputs.
+Validate model output before using it in later application steps.
+
+### Connect Relevant Data
+
+An application may connect an LLM to documents, databases, or other approved information sources.
+Retrieve information that is relevant to the current request.
+Respect access permissions and include source details when users need to verify an answer.
+
+### Add Safeguards and Tests
+
+Handle invalid input, service errors, timeouts, and unexpected model responses.
+Use access controls and validate tool inputs and outputs.
+Test the complete workflow with representative examples, including failure cases.
+
+## Memory and Conversation Context
+
+Memory is information an application chooses to retain, such as selected conversation history or user preferences.
+Retained context can make later responses more relevant.
+
+An LLM does not automatically remember earlier requests across separate interactions.
+Applications manage memory explicitly and decide what context to provide to the model.
+
+Store only information that is useful for the application's purpose.
+Protect sensitive information and provide a way to review, update, or delete stored context.
+
+## Retrieval-Augmented Generation (RAG)
+
+Retrieval-augmented generation (RAG) combines search with text generation.
+The application retrieves relevant passages from a knowledge base and provides those passages to an LLM as context.
+
+RAG can ground responses in an organization's documents.
+It can also make information easier to update because the knowledge base can be changed without retraining the model.
+
+RAG quality depends on the source documents, retrieval process, and the model's use of retrieved context.
+Verify important answers against reliable sources; generated text is not automatically correct.
+
+## Embeddings and Semantic Search
+
+An embedding is a numerical representation of text.
+Embeddings can represent aspects of meaning so that texts with similar meanings can be compared.
+
+Semantic search uses embeddings to find relevant text, even when a passage does not use the exact words in the query.
+The selected embedding model and text preparation can affect search results.
+
+## Vector Stores
+
+A vector store is a database or index that stores embeddings and supports similarity-based retrieval.
+It may store each embedding with its original text and metadata, such as a document title or section name.
+
+For a search, an application compares a query embedding with stored embeddings and returns likely matches.
+Review retrieved passages for relevance, accuracy, and access permissions before using them.
+
+## Agents and Tools
+
+An agent is a workflow in which a model helps choose among steps or approved tools.
+Examples of tools include searching a database, retrieving a document, or calling an application API.
+
+Define which tools are available and what inputs each tool accepts.
+Enforce authorization and input validation in the application, not only in the prompt.
+Use human review for actions that are sensitive, consequential, or difficult to reverse.
+
+## Query Expansion
+
+Query expansion creates alternative phrasings or related search terms from a user's original query.
+The additional terms can help retrieval find relevant passages that use different vocabulary.
+
+Example: “reduce cloud costs” could be expanded to “cloud spending optimization” and “lower infrastructure expenses.”
+Expanded queries should preserve the user's intent.
+Combine retrieved results carefully and remove duplicates when appropriate.
+
+## Evaluation
+
+Evaluate an AI workflow using representative questions and relevant source material.
+Measure answer quality, relevance, factual grounding, latency, and cost.
+
+Review failure cases, including questions with missing or conflicting information.
+Run evaluations again after changing the model, prompt, retrieval settings, or source documents.
+
+## Practical Guideline
+
+Use the smallest, simplest workflow that meets the application's needs.
+Verify important answers against reliable sources and explain limitations when needed.
